@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div>
+        <div class="first-image-container"></div>
+        <div class="other-images-container"></div>
+      </div>
+      <div class="content">
+        <div id="title-container"></div>
+        <div id="title"></div>
+        <hr />
+        <div class="price">
+          <div id="discountPrice"></div>
+          <section id="sale"></section>
+        </div>
+        <div id="originalPrice"><s></s></div>
+        <hr />
+        <p>Choose a Color</p>
+        <div id="colors">
+          <div class="color-options"></div>
+        </div>
+        <hr />
+        <div id="sizes">
+          <p>Choose a Size</p>
+          <div class="size-options"></div>
+        </div>
+        <div id="cart">
+          <div id="numbers" class="number-container">
+            <div><button id="decrement" class="btn">-</button></div>
+            <div><span id="number" class="number-display">1</span></div>
+            <div><button id="increment" class="btn">+</button></div>
+          </div>
+          <div id="message-container">
+            <button
+              id="add-to-cart"
+              class="add-to-cart-btn"
+              onclick="displayInfo()"
+            >
+              🛍 Add to Cart
+            </button>
+          </div>
+        </div>
+        <div>
+          <div id="message"></div>
+        </div>
+        <hr />
+        <div id="description"></div>
+      </div>
+    </div>
+
+    <script src="Main.js"></script>
+  </body>
+</html>
